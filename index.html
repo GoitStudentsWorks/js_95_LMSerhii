@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_95_LMSerhii/assets/favicon-599acd71.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Boutique</title>
+    
+    <script type="module" crossorigin src="/js_95_LMSerhii/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_95_LMSerhii/assets/vendor-f213eb09.js">
+    <link rel="modulepreload" crossorigin href="/js_95_LMSerhii/assets/header-8c8bb8b5.js">
+    <link rel="stylesheet" href="/js_95_LMSerhii/assets/header-2289757c.css">
+    <link rel="stylesheet" href="/js_95_LMSerhii/assets/vendor-ee8849a6.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-content container">
+    <ul class="logo-list">
+      <li class="logo-item">
+        <a href="./index.html" class="logo-link">
+          <svg class="logo-icon" width="20" height="20">
+            <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#cabbage"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="logo-item">
+        <a href="./index.html" class="logo-link">Food Boutique</a>
+      </li>
+    </ul>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link nav-home">Home</a>
+        </li>
+        <li class="nav-item item-cart">
+          <a href="./cart_2.html" class="nav-link nav-cart">
+            <svg class="nav-icon" width="18" height="18">
+              <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#cart"></use>
+            </svg>
+          </a>
+          <p class="cartValue">Cart <span id="product-count-header">0</span></p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+  <section class="hero">
+  <div class="container container-hero">
+    <h1 class="h-one-hero">
+      Welcome to the <span class="hero-green-food"> Food </span> Boutique!
+    </h1>
+    <p class="p-two-hero">
+      With Food Boutique, you're not just subscribing to food, you're signing up
+      for a fresher, fitter, and happier you.
+    </p>
+
+    <div class="hero-content">
+      <img
+        class="hero-organic-food"
+        src="/js_95_LMSerhii/assets/organic_food@1x-fc6c563f.png"
+        srcset="/js_95_LMSerhii/assets/organic_food@1x-fc6c563f.png 1x, /js_95_LMSerhii/assets/organic_food@2x-8582dceb.png 2x"
+        alt="text organic food"
+      />
+    </div>
+  </div>
+</section>
+
+  <section class="filters">
+  <div class="container">
+    <div id="loader" class="loader"></div>
+
+    <p class="form-label">Filters:</p>
+    <form class="form hidden" name="filters" id="filtersForm">
+      <div class="filter-input-wrapper">
+        <input
+          class="filters-input js-input"
+          type="text"
+          id="textInput"
+          name="search"
+          placeholder="Search for anything"
+        />
+
+        <button class="search-btn" type="submit">
+          <svg class="search-btn-svg" width="20" height="20">
+            <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+      <select class="categories-select" id="categoryField" name="categories">
+        <option data-placeholder="true">Categories</option>
+      </select>
+      <select class="filters-select" id="abcField" name="alpabetSearch">
+        <option data-placeholder="true">A to Z</option>
+        <option value="alphabetical">A to Z</option>
+        <option value="reverse-alphabetical">Z to A</option>
+        <option value="cheap">Cheap</option>
+        <option value="expensive">Expensive</option>
+        <option value="popular">Popular</option>
+        <option value="not-popular">Not popular</option>
+        <option value="">Show all</option>
+      </select>
+    </form>
+  </div>
+</section>
+
+  <div class="home-sections">
+    <div class="prod-pagin">
+      <div class="container-products">
+  <h2 class="visually-hidden">Products</h2>
+
+  <ul class="product-list"></ul>
+</div>
+
+      <section class="pagination-section">
+    <div class="container">
+        <div class="tui-pagination" id="pagination-container"></div>
+    </div>
+</section>
+    </div>
+    <div class="popul-disc">
+    <section class="popular-products">
+  <h2 class="title-popular-product">Popular products</h2>
+
+  <div class="container-popular">
+    <ul class="popular_products_list"></ul>
+  </div>
+</section>
+
+    <section class="discount-section">
+  <div class="discount-product-container">
+    <h2 class="discount-product-title">Discount products</h2>
+    <ul class="discount-product-list"></ul>
+  </div>
+</section>
+
+    </div>
+  </div>
+</main>
+
+
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-box">
+      <div class="footer-left-box">
+        <div class="with-logo-container">
+          <ul class="list logo-list">
+            <li class="cabbage-item">
+              <svg class="footer-cabbage-icon" width="20" height="20">
+                <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#cabbage"></use>
+              </svg>
+            </li>
+            <li class="logo-item">
+              <a href="" class="link logo-link footer-logo">Food Boutique</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-media-container">
+          <ul class="list social-media-list">
+            <li class="icon-box">
+              <a
+                class="footer-social-links"
+                href="https://www.facebook.com/goITclub/"
+                ><svg class="social-icon" width="28" height="28">
+                  <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-box">
+              <a
+                href="https://www.instagram.com/goitclub/"
+                class="footer-social-links"
+                ><svg class="social-icon" width="28" height="28">
+                  <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-box">
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                class="footer-social-links"
+              >
+                <svg class="social-icon" width="28" height="28">
+                  <use href="/js_95_LMSerhii/assets/sprite-10b57387.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-subscribe-box">
+        <div class="footer-text-box">
+          <h3 class="footer-text">
+            Discover the Variety of Flavors and Quality
+          </h3>
+          <p class="footer-paragraph">
+            An online store where you will find fresh, natural and delicious
+            products for a healthy life and unforgettable gastronomic
+            adventures.
+          </p>
+        </div>
+        <div class="subscribe-box">
+          <p class="subscribe-paragraph">
+            Subscribe and learn about new products!
+          </p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <!-- <input
+                type="email"
+                name="user_address"
+                class="subscribe-input"
+                placeholder="E-mail"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              /> -->
+              <input
+              type="text"
+              name="user_address"
+              class="subscribe-input"
+              placeholder="E-mail"
+            />
+            </label>
+            <button type="submit" class="button send-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="policy-box">
+      <ul class="policy-list">
+        <li class="policy-item">
+          <p class="policy-paragraph">Food Boutique. All rights reserved.</p>
+        </li>
+        <li class="policy-item">
+          <a href="" class="policy-paragraph link"
+            >Privacy Policy / Terms of Service</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    
+
+<!-- <button class="btn" type="button" data-modal-open>click</button> -->
+
+<div class="modal is-hidden" data-modal >
+  
+</div>
+
+    
+  </body>
+</html>
